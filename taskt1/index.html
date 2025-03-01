@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        padding: 2% 10%;
+        font-family: Arial, sans-serif;
+        color: #666666;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 10px 0;
+      }
+
+      header img {
+        width: 100px;
+        height: 100px;
+      }
+
+      nav {
+        width: 100%;
+        background-color: #f1f1f1;
+        padding: 8px 0;
+      }
+      nav div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 750px;
+        padding: 1px;
+      }
+
+      nav span {
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: 500;
+      }
+
+      nav span:hover {
+        color: #ec8701;
+      }
+
+      h2 {
+        color: #ec8701;
+        margin-top: 20px;
+      }
+
+      hr {
+        border: 1px solid #ccc;
+        margin: 10px 0;
+      }
+      hr.dotted {
+        border-top: 2px dotted #ccc;
+        width: 720px;
+      }
+      .form-container {
+        display: flex;
+        gap: 20px;
+      }
+
+      .left-form,
+      .right-form {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        width: 100%;
+        max-width: 500px;
+      }
+      .right-form {
+        margin-top: 10px;
+      }
+
+      .form-input {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
+
+      .form-input select,
+      .form-input input {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      .radio {
+        display: flex;
+        gap: 20px;
+      }
+
+      .dob-group {
+        display: flex;
+        gap: 10px;
+      }
+
+      .dob-group select {
+        flex: 1;
+      }
+
+      .radio-group {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+      }
+
+      .radio-group label {
+        font-weight: normal;
+      }
+      select option {
+        color: #666666;
+      }
+
+      select {
+        color: #666666;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img
+        src="https://ledp.ictd.gov.bd/global/img/ictdd.png"
+        alt="ICTD Logo"
+      />
+      <img
+        src="https://ledp.ictd.gov.bd/global/img/ledp.apng"
+        alt="LEDP Logo"
+      />
+    </header>
+
+    <nav>
+      <div>
+        <span>Home</span>
+        <span>Course Module - 2020</span>
+        <span>Class Schedule</span>
+        <span>Success Story</span>
+        <span>Attendance</span>
+        <span>FAQ</span>
+        <span>Login</span>
+      </div>
+    </nav>
+
+    <section>
+      <h2>Student Registration Form</h2>
+      <hr />
+      <div style="display: flex; gap: 10px">
+        <h3>Please enter relevant information</h3>
+        <hr class="dotted" />
+      </div>
+      <div class="form-container">
+        <form class="left-form">
+          <div class="form-input">
+            <label
+              >District
+              <small
+                >(Institute District: Where you want to do your course)</small
+              >
+              *</label
+            >
+            <select name="district">
+              <option value="">Select</option>
+              <option value="Dhaka">Dhaka</option>
+              <option value="Khulna">Khulna</option>
+              <option value="Pabna">Pabna</option>
+            </select>
+          </div>
+
+          <div class="form-input">
+            <label>Course *</label>
+            <select name="course">
+              <option value="">Select</option>
+              <option value="Web Design">Web Design</option>
+              <option value="Graphics Design">Graphics Design</option>
+              <option value="Marketing">Marketing</option>
+            </select>
+          </div>
+
+          <div class="form-input">
+            <label>Student Name *</label>
+            <input type="text" name="student-name" required />
+          </div>
+
+          <div class="form-input">
+            <label>Father's Name *</label>
+            <input type="text" name="father-name" required />
+          </div>
+
+          <div class="form-input">
+            <label>Mother's Name *</label>
+            <input type="text" name="mother-name" required />
+          </div>
+
+          <div class="form-input">
+            <label>Date of Birth *</label>
+            <div class="dob-group">
+              <select name="day" required>
+                <option value="">Day</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+              </select>
+              <select name="month" required>
+                <option value="">Month</option>
+                <option value="1">January</option>
+                <option value="2">February</option>
+                <option value="3">March</option>
+                <option value="4">April</option>
+                <option value="5">May</option>
+                <option value="6">June</option>
+                <option value="7">July</option>
+                <option value="8">August</option>
+                <option value="9">September</option>
+                <option value="10">October</option>
+                <option value="11">November</option>
+                <option value="12">December</option>
+              </select>
+              <select name="year" required>
+                <option value="">Year</option>
+                <option value="2023">2025</option>
+                <option value="2023">2024</option>
+                <option value="2023">2023</option>
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+                <option value="2020">2020</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="radio">
+            <label>Gender *</label>
+            <div class="radio-group">
+              <label> Male</label>
+              <input type="radio" name="gender" value="Male" required />
+              <label> Female</label>
+              <input type="radio" name="gender" value="Female" required />
+            </div>
+          </div>
+
+          <div class="radio" style="margin: 10px 0px">
+            <label>Physically Handicapped *</label>
+            <div class="radio-group">
+              <label> Yes</label>
+              <input type="radio" name="handicapped" value="Yes" required />
+              <label> No</label>
+              <input type="radio" name="handicapped" value="No" required />
+            </div>
+          </div>
+
+          <div class="form-input">
+            <label>Email *</label>
+            <input type="email" name="email" required />
+            <p style="color: #5a4f4f">e.g: example@mail.com</p>
+          </div>
+
+          <div class="form-input">
+            <label>Phone (Must be 11 Digits) *</label>
+            <input type="tel" name="phone" pattern="[0-9]{11}" required />
+            <p style="color: #5a4f4f">e.g: 0155123456</p>
+          </div>
+        </form>
+        <form class="right-form">
+          <div class="form-input">
+            <label>Identification Type*</label>
+            <select name="identification-type">
+              <option value="">Select</option>
+              <option value="Dhaka">Dhaka</option>
+              <option value="Khulna">Khulna</option>
+              <option value="Pabna">Pabna</option>
+            </select>
+            <p style="color: #5a4f4f">
+              Identification No. (Must be 10 digits for new NID or 17 digits for
+              old NID. If your National ID is 13 digits, then please add your
+              birth year with the ID as prefix. Example: 1980XXXXXXXXXXXXX)*
+            </p>
+          </div>
+          <div class="form-input">
+            <label>Home District *</label>
+            <select name="home-district">
+              <option value="">Select</option>
+              <option value="Dhaka">Dhaka</option>
+              <option value="Khulna">Khulna</option>
+              <option value="Pabna">Pabna</option>
+            </select>
+          </div>
+          <div class="form-input">
+            <label>Upzilla *</label>
+            <select name="upzilla">
+              <option value="">Select</option>
+              <option value="Dhaka">Dhaka</option>
+              <option value="Khulna">Khulna</option>
+              <option value="Pabna">Pabna</option>
+            </select>
+          </div>
+          <div class="form-input">
+            <label>Village/House No./Road No./Other Alternative**</label>
+            <input type="text" name="village" required />
+          </div>
+
+          <div class="form-input">
+            <label>Post Office**</label>
+            <input type="text" name="post-office" required />
+          </div>
+          <div class="form-input">
+            <label
+              >Educational Qualification <small>(Higher Level)</small> *</label
+            >
+            <select name="educational-qualification">
+              <option value="">Select</option>
+              <option value="bachelor">Bachelor</option>
+              <option value="Master">Master</option>
+              <option value="Phd">Phd</option>
+            </select>
+          </div>
+          <div class="radio" style="margin: 10px 0px">
+            <label>Have any computer?*</label>
+            <div class="radio-group">
+              <label> Yes</label>
+              <input type="radio" name="computer" value="Yes" required />
+              <label> No</label>
+              <input type="radio" name="computer" value="No" required />
+            </div>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 5px">
+            <label>Photograph*</label>
+            <input type="file" name="photograph" required />
+            <small style="color: #5a4f4f">
+              (File type must be jpg or jpeg or png. Maximum file size 2 mb.)
+            </small>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 5px">
+            <label>Signature*</label>
+            <input type="file" name="signature" required />
+            <small style="color: #5a4f4f">
+              (File type must be jpg or jpeg or png. Maximum file size 2 mb.)
+            </small>
+          </div>
+          <div>
+            <button style="padding: 7px 10px">Submit Data</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
