@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #6a717e;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  width: 90vw;
+  padding: 1.25rem;
+  margin: 0 auto;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+}
+
+.nav-right {
+  display: flex;
+  gap: 3.125rem;
+  align-items: center;
+}
+
+.logo {
+  width: 9.375rem;
+}
+
+.menu {
+  display: flex;
+  gap: 1.875rem;
+}
+
+.nav-left {
+  display: flex;
+  gap: 2.5625rem;
+  align-items: center;
+}
+
+.avatar {
+  width: 3.125rem;
+}
+
+.cart-icon {
+  width: 1.875rem;
+}
+
+.main-img {
+  width: 30vw;
+  border-radius: 0.5rem;
+}
+
+.main-img img {
+  border-radius: 0.625rem;
+}
+
+.product-img-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  width: 32vw;
+  align-items: center;
+}
+
+.small-img {
+  width: 32vw;
+  display: flex;
+  gap: 1.25rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.small-img img {
+  width: 6vw;
+  border-radius: 0.625rem;
+  height: 6vw;
+}
+
+section.product.container {
+  width: 80vw;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.product-details {
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.875rem;
+  padding: 0 1.25rem;
+}
+
+.titles h4 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #6a717e;
+  margin-bottom: 0.625rem;
+}
+
+.titles h2 {
+  font-size: 2.5rem;
+  color: #222;
+  line-height: 1.2;
+}
+
+.dec_price p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #6a717e;
+  width: 28vw;
+  margin-bottom: 0.625rem;
+}
+
+.price_flex b {
+  font-size: 2rem;
+  margin-bottom: 0.3125rem;
+}
+
+.price_flex {
+  display: flex;
+  gap: 0.9375rem;
+  align-items: center;
+}
+
+.price_flex p {
+  background-color: black;
+  width: 2.375rem;
+  height: 1.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ddd;
+  font-weight: 600;
+  border-radius: 0.25rem;
+  margin-top: 0.625rem;
+  font-size: 0.875rem;
+}
+
+small {
+  text-decoration: line-through;
+  font-size: 0.9375rem;
+  color: #666;
+}
+
+.button-container {
+  display: flex;
+  gap: 1.5625rem;
+  border-radius: 0.25rem;
+  align-items: center;
+}
+
+.quantity_button {
+  display: flex;
+  align-items: center;
+  background: #f7f8fd;
+  padding: 0.625rem;
+  gap: 2.5rem;
+  border-radius: 0.25rem;
+}
+
+.cart-button img {
+  width: 1.25rem;
+}
+
+button.cart-button {
+  outline: none;
+  border: none;
+  background: #d06622;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ddd9d9;
+  min-width: 8rem !important;
+  min-height: 1rem !important;
+  padding: 0.8125rem 1.5625rem;
+}
+
+.quantity_button button {
+  border: none;
+  outline: none;
+  font-size: 1.5625rem;
+  color: #d06622;
+  font-weight: 600;
+}
+
+.quantity_button p {
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: #333;
+}

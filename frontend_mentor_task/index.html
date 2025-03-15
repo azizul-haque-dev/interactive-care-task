@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Frontend Mentor | E-commerce product page</title>
+  </head>
+  <body>
+    <nav class="navbar container">
+      <div class="nav-right">
+        <div class="logo">
+          <img src="images/logo.svg" alt="" />
+        </div>
+        <ul class="menu">
+          <li><a href="#">Collections </a></li>
+          <li><a href="#">Men </a></li>
+          <li><a href="#">Women </a></li>
+          <li><a href="#">About </a></li>
+          <li><a href="#">Contact </a></li>
+        </ul>
+      </div>
+      <div class="nav-left">
+        <div class="cart-icon">
+          <img src="/images/icon-cart.svg" alt="" />
+        </div>
+        <div class="avatar">
+          <img src="/images/image-avatar.png" alt="" />
+        </div>
+      </div>
+    </nav>
+    <section class="product container">
+      <div class="product-img-container">
+        <div class="main-img">
+          <img src="/images/image-product-1.jpg" alt="" />
+        </div>
+        <div class="small-img">
+          <img src="/images/image-product-1-thumbnail.jpg" alt="" />
+          <img src="/images/image-product-2-thumbnail.jpg" alt="" />
+          <img src="/images/image-product-3-thumbnail.jpg" alt="" />
+          <img src="/images/image-product-4-thumbnail.jpg" alt="" />
+        </div>
+      </div>
+      <div class="product-details">
+        <div class="titles">
+          <h4>Sneaker Company</h4>
+          <h2>Fall Limited Edition Sneakers</h2>
+        </div>
+
+        <div class="dec_price">
+          <p>
+            These low-profile sneakers are your perfect casual wear companion.
+            Featuring a durable rubber outer sole, they’ll withstand everything
+            the weather can offer.
+          </p>
+          <div class="price">
+            <div class="price_flex">
+              <b> $125.00</b>
+              <p>50%</p>
+            </div>
+
+            <small> $250.00</small>
+          </div>
+        </div>
+        <div class="button-container">
+          <div class="quantity_button">
+            <button>-</button>
+            <p>0</p>
+            <button>+</button>
+          </div>
+          <button class="cart-button">
+            <img src="/images/icon-cart.svg" alt="" /> Add To Cart
+          </button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
