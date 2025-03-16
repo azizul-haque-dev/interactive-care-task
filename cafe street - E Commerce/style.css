@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins" sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 400;
+}
+ul {
+  list-style: none;
+}
+img {
+  width: 100%;
+}
+.absolute {
+  position: absolute;
+}
+.relative {
+  position: relative;
+}
+
+.container {
+  max-width: 80.882vw;
+  margin: 0 auto;
+}
+header {
+  position: fixed;
+  height: 80px;
+  width: 100%;
+  z-index: 100;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+header.active {
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px;
+}
+.logo {
+  width: 12.92vw;
+}
+.menu {
+  display: flex;
+  gap: 20px;
+}
+.menu li a.active {
+  color: #ff902b;
+}
+.search-bar-cart-container {
+  display: flex;
+  gap: 20px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 8px 15px;
+  border-radius: 20px;
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.1);
+  width: 18vw;
+}
+.search-bar i {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 8px;
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  font-size: 14px;
+  color: #666;
+  background: transparent;
+  width: 100%;
+}
+i.cart {
+  font-size: max(1.8vw, 20px);
+}
+.cart-box {
+  position: relative;
+}
+.dot {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: #ff902b;
+  top: 1px;
+  right: -1px;
+  border-radius: 50%;
+}
+
+/* hero section */
+
+.hero-section {
+  background-color: #f6ebda;
+  height: 800px;
+  padding-top: 50px;
+  overflow: hidden;
+}
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+
+  padding-top: 50px;
+}
+.hero-right,
+.hero-left {
+  width: 35vw;
+}
+
+.hero-left h2 {
+  font-size: 3rem;
+}
+
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 50px;
+  z-index: 2;
+}
+
+.hero-left p {
+  width: 70%;
+  color: #7e7d7a;
+  line-height: 1.5;
+  font-size: 15px;
+}
+
+.hero-btn-container {
+  display: flex;
+  gap: 30px;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+button.hero-btn {
+  display: flex;
+  padding: 12px 32px;
+  border-radius: 33px;
+  background-color: #2f2105;
+  color: #fff;
+  gap: 10px;
+  font-size: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+i.bi.bi-cart.btn-cart {
+  display: flex;
+  height: 25px;
+  width: 25px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #ff902b;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+button.hero-btn-transparent {
+  background: transparent;
+  color: #ff902b;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.hero-img-content {
+  border-radius: 50%;
+  background-color: #2f2105;
+  display: flex;
+  height: 380px;
+  justify-content: center;
+  width: 380px;
+  padding: 45px;
+  align-items: center;
+  position: relative;
+}
+
+.hero-img-content::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(/img/Exclude.png);
+  z-index: 10;
+}
+.hero-img {
+  width: 350px;
+  height: 350px;
+}
+.absolute.right {
+  right: 0;
+  top: 0;
+  width: 40vw;
+  height: 30vw;
+  z-index: 0;
+}
+
+.absolute.left {
+  bottom: 0;
+  left: 0;
+  width: 30vw;
+  height: 15vw;
+  z-index: 1;
+}
+.product.name.absolute {
+  width: 15vw;
+  top: 18px;
+  left: -16px;
+}
+.product {
+  background-color: #fff;
+  height: 3vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  border: 5px solid #c0bbb3;
+}
+.product.ratting.absolute {
+  width: 7vw;
+  right: -30px;
+  top: 25%;
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.product.price.absolute {
+  left: 19%;
+  bottom: 21%;
+  width: 7vw;
+}
+
+.product.ratting.absolute i {
+  font-size: 12px;
+  color: #ffd057;
+}
+.hero-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
