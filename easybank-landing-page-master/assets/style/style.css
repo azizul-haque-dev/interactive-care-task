@@ -7,6 +7,7 @@
 }
 body {
   font-family: "Public Sans", sans-serif;
+  /* overflow-x: clip; */
 }
 button,
 input {
@@ -86,6 +87,7 @@ a.navlink {
   font-size: 1rem;
 }
 .hero-wrapper {
+  overflow-x: clip;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   place-items: center;
