@@ -12,27 +12,19 @@ Summer 2022
 
  */
 function parseString(...args) {
-  let isNum = true;
-  let sum = 0;
-  let str = "";
-  let numbers;
-  for (let i = 0; i < args.length; i++) {
-    if (/\d/.test(str[i])) {
-    }
-    if (typeof args[i] !== "number") {
-      isNum = false;
-      break;
-    }
-  }
-  if (isNum) {
-    numbers = args.map((i) => Number(i));
-  }
+  const isNumber = args.every((item) => !isNaN(Number(item)));
 
-  return isNum
-    ? numbers.reduce((a, b) => Number(a) + Number(b), 0)
-    : args.join(" ");
+  let res;
+
+  if (isNumber) {
+    res = args.reduce((a, b) => Number(a) + Number(b), 0);
+  } else {
+    res = args.join(" ");
+  }
+  console.log(res);
+  return res;
 }
 
-console.log(parseString("21", "24", "40")); // 85
-console.log(parseString("Summer", "2022")); // "Summer 2022"
-console.log(parseString("Hello", "Alpha")); // "Hello Alpha"
+parseString("21", "24", "40");
+parseString("Summer", "2022");
+parseString("Hello", "Alpha");
