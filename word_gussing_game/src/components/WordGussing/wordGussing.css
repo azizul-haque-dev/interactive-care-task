@@ -1,0 +1,12 @@
+.word_guessing {
+  width: 1100px;
+  height: 500px;
+  margin: 50px auto;
+  background-color: rgba(255, 166, 0, 0.507);
+  border-radius: 20px;
+  padding: 30px;
+}
+.word_guessing .hints_score {
+  display: flex;
+  justify-content: space-between;
+}

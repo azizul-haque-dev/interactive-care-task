@@ -1,0 +1,9 @@
+.tag {
+  width: 100px;
+  display: inline-block;
+  border-radius: 30px;
+  border: 2px solid black;
+  text-align: center;
+  font-size: 20px;
+  text-transform: capitalize;
+}

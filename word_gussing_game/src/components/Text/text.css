@@ -1,0 +1,14 @@
+.text_score {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.text_answer_hints {
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.text_question_title {
+  font-size: 20px;
+  font-weight: bold;
+}
